@@ -1,15 +1,6 @@
 # S3 Portal
 
-> Constructing
-
-- Angular
-- AngularUI Router
-- Angular Translate
-- Angular Material
-- Webpack
-- Babel
-- ESLint
-- BrowserSync
+> Constructing...
 
 ### Requirement
 
@@ -65,7 +56,3 @@ $ npm test
 ```sh
 $ npm run lint
 ```
-
-### Referencies
-- https://github.com/AngularClass/NG6-starter
-- https://github.com/nihgwu/hexo-hey

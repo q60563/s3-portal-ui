@@ -34,9 +34,24 @@ export default class SignInController {
             this.$toast.show(signInSuccess);
           })
       })
-      .catch(() => {
+      .catch((res) => {
         this.form.$submitted = false;
-        this.incorrect = true;
+        if (res.status != -1) {
+          if (res.data.message == 'Connection to Ceph failed') {
+            this.$translate('TOAST.CONNECT_CEPH_ERROR')
+              .then(message => {
+                this.$toast.show(message);
+              })
+          } else {
+            this.incorrect = true;
+          }
+        } else {
+          this.incorrect = false;
+          this.$translate('TOAST.CONNECT_ERROR')
+            .then(message => {
+              this.$toast.show(message);
+            })
+        }
       });
   }
 }

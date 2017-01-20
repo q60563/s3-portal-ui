@@ -12,6 +12,7 @@ export default {
     REFRESH: 'Refresh',
     CONFIRM: 'Confirm',
     OR: 'or',
+    MOVE: 'Move',
   },
   VALIDATION: {
     REQUIRED: 'You left the field blank.',
@@ -49,6 +50,7 @@ export default {
     DELETE_CONFIRM: `Deleting this bucket and its objects (
     including older versions if applicable) <b>cannot be undone</b>.
     Are you sure you want to delete <b>{{ name }}</b>?`,
+    VALIDATE_ERROR: 'You need contain at least 1 uppercase character (A-Z)',
   },
   ACTION_NAVBAR: {
     ACTIONS: 'Actions',
@@ -76,6 +78,8 @@ export default {
     RESET_SUCCESS: '{{ email }} Reset Password Success!',
     RESET_FAIL: '{{ email }} Reset Password Fail，Please Try Again!',
     CANCEL_UPLOAD: 'Upload {{ name }} Has Been Cancel',
+    CONNECT_ERROR: 'Connection Error! Please Try Again!',
+    CONNECT_CEPH_ERROR: 'Connect To Ceph Error! Please Try Again Later!',
   },
   AUTH: {
     EMAIL: 'Email',
@@ -144,6 +148,9 @@ export default {
     PROPERTIES_NAME: 'File Name',
     RENAME_SUCCESS: 'Your File {{ fileName }} Rename Success',
     RENAME_FAILURE: 'Your File {{ fileName }} Rename Failure, Please Try Again!',
+    MOVE_SUCCESS: 'Your File {{ fileName }} Move Success',
+    MOVE_FAILURE: 'Your File {{ fileName }} Move Failure, Please Try Again!',
+    MOVE_CONTENT: 'Choose select file folder where you want to move',
   },
   MANAGER: {
     USER_LIST: 'User List',

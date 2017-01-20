@@ -12,6 +12,7 @@ export default {
     REFRESH: '刷新',
     CONFIRM: '确定',
     OR: '或',
+    MOVE: '移动',
   },
   VALIDATION: {
     REQUIRED: '此栏位不得为空。',
@@ -46,6 +47,7 @@ export default {
     DELETE_CONFIRM: `删除此 bucket 及此 bucket 内的所有文件与文件夹
     （若有支援旧版本则包含旧版本）<b>会无法复原</b>。
     你确认要删除 <b>{{ name }}</b> 吗？`,
+    VALIDATE_ERROR: '至少需要一个大写英文字母',
   },
   ACTION_NAVBAR: {
     ACTIONS: '操作',
@@ -73,6 +75,8 @@ export default {
     RESET_SUCCESS: '{{ email }} 更改密码成功!',
     RESET_FAIL: '{{ email }} 更改密码失败，请再试一次',
     CANCEL_UPLOAD: '{{ name }} 的上传已被取消',
+    CONNECT_ERROR: '联机失败，请再试一次!',
+    CONNECT_CEPH_ERROR: '连线至 Ceph 失败! 请稍後!',
   },
   AUTH: {
     EMAIL: '电邮',
@@ -134,6 +138,9 @@ export default {
     PROPERTIES_NAME: '文件名',
     RENAME_SUCCESS: '档案 {{ fileName }} 重新命名成功',
     RENAME_FAILURE: '档案 {{ fileName }} 重新命名失败，请再试一次!',
+    MOVE_SUCCESS: '档案 {{ fileName }} 移动档案成功',
+    MOVE_FAILURE: '档案 {{ fileName }} 移动档案失败，请再试一次!',
+    MOVE_CONTENT: '选择移动的目的地资料夹',
   },
   MANAGER: {
     USER_LIST: '使用者列表',
